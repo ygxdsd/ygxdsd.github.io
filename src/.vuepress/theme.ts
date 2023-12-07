@@ -10,7 +10,7 @@ export default hopeTheme({
 
   author: {
     name: "Rush",
-    url: "https://mister-hope.com",
+    url: "https://ygxdsd.github.io/",
   },
 
   iconAssets: "fontawesome-with-brands",
@@ -36,12 +36,11 @@ export default hopeTheme({
     description: "一个致力于成为Java全栈的小白",
     intro: "/intro.html",
     medias: {
-
-      BiliBili: "https://example.com",
+      BiliBili: "https://space.bilibili.com/280797809",
       Email: "mailto:1047897833@qq.com",
-      Gitee: "https://example.com",
-      GitHub: "https://example.com",
-      QQ: "https://example.com",
+      Gitee: "https://gitee.com/ygxdsd",
+      GitHub: "https://github.com/ygxdsd",
+      QQ: "http://wpa.qq.com/msgrd?v=3&uin=1047897833&site=qq&menu=yes",
       Steam: "https://example.com",
       Wechat: "https://example.com",
     },
