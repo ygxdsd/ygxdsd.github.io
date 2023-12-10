@@ -10,3 +10,5 @@ article: false
 [JDBC入门使用](./Mysql.md)
 
 [MyBatis入门使用](./MyBatis.md)
+
+[Web核心乱码问题解决](./Encoding.md)
