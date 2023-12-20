@@ -12,3 +12,5 @@ article: false
 [MyBatis入门使用](./MyBatis.md)
 
 [Web核心乱码问题解决](./Encoding.md)
+
+[SSM整合](./SSMtemplate.md)

@@ -2,11 +2,15 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/code",
+  {
+    text:"代码笔记",
+    link:"code",
+    icon:"code"
+  },
   {
     text:"博客文章",
     link:"blog",
-    icon:"book"
+    icon:"blog"
   },
   {
     text: "V2 文档",

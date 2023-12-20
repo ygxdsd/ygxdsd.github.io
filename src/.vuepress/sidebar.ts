@@ -8,11 +8,16 @@ export default sidebar({
   "/code":[
     {
       text:"JavaWeb核心",
-      link:"JavaWeb.md"
+      link:"JavaWeb.md",
+      icon:"file"
     },
     {
       text:"Spirng框架学习",
-      link:"Spring.md"
+      link:"Spring.md",
+      icon:"file"
     },
   ],
+  "/intro":[
+    "/"
+  ]
 });

@@ -2,8 +2,8 @@
 title : Web核心乱码问题解决
 category:
   - 编码
-tag:
   - 中文乱码
+  
 star : true
 ---
 
@@ -57,4 +57,19 @@ URLEncoder.encode("张三" , "UTF-8");
 
 ```java
 URLDecoder.decode(value , "UTF-8");
+```
+
+### SpringMVC中GET和POST乱码处理
+
+- POST处理
+
+在`java/config/ServletContainersInitConfig`中，对`getServletFilters`进行重写
+
+```java
+@Override
+    protected Filter[] getServletFilters() {
+        CharacterEncodingFilter filter = new CharacterEncodingFilter();
+        filter.setEncoding("UTF-8");
+        return new Filter[]{filter};
+    }
 ```
