@@ -12,7 +12,8 @@ star : true
 `more` MyBatis的配置与入门使用
 <!-- more -->
 
-Java操作数据库的API，里面包含了所有操作关系数据库的方法。比如：Mysql，ORACLE,DB2
+ 采用 ORM 思想解决了实体和数据库映射的问题，它内部封装了 jdbc，使开发者只需要关注 sql 语句本身，而不需要花费精力去处理加载驱动、创建连接、创建 statement 等繁杂的过程。
+
 
 
 ## logback日志配置
@@ -74,12 +75,19 @@ Java操作数据库的API，里面包含了所有操作关系数据库的方法�
 
 ### pom配置
 
-```java
+```xml
 <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
 <dependency>
     <groupId>org.mybatis</groupId>
     <artifactId>mybatis</artifactId>
     <version>3.5.0</version>
+</dependency>
+
+<!-- 配置连接数据库配置 -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.26</version>
 </dependency>
 ```
 

@@ -206,9 +206,24 @@ tag:
   
   ```java
   @Configuration
-  @ComponentScan("com.zyb.controller")
+  @ComponentScan({"com.zyb.controller" , "com.zyb.config"})
   @EnableWebMvc
   public class SpringMvcConfig {
+  }
+  ```
+
+   - SpringMvcSupport(静态资源放行)
+  
+  ```java
+  @Configuration/
+  public class SpringMvcSupport extends WebMvcConfigurationSupport {
+      @Override
+      protected void addResourceHandlers(ResourceHandlerRegistry registry) {
+          registry.addResourceHandler("/pages/**").addResourceLocations("/pages/");
+          registry.addResourceHandler("/css/**").addResourceLocations("/css/");
+          registry.addResourceHandler("/js/**").addResourceLocations("/js/");
+          registry.addResourceHandler("/plugins/**").addResourceLocations("/plugins/");
+      }
   }
   ```
 

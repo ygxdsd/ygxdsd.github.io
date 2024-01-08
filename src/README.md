@@ -15,9 +15,9 @@ projects:
     link: https://你的项目链接
 
   - icon: link
-    name: 链接名称
-    desc: 链接详细描述
-    link: https://链接地址
+    name: 框架思维导图
+    desc: Spring全家桶＋Mybatis框架
+    link: https://modao.cc/mind/share/4X2YGs3wao5peZNq4QV
 
 
 footer: 自定义你的页脚文字
