@@ -16,6 +16,11 @@ export default sidebar({
       link:"Spring.md",
       icon:"file"
     },
+    {
+      text:"面试习题",
+      link:"Interview.md",
+      icon:"file"
+    },
   ],
   "/intro":[
     "/"
