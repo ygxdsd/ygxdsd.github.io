@@ -2,6 +2,7 @@
 title: 面试常见习题
 tag:
   - 面试
+article: false
 ---
 
 `more` 常见面试的解答

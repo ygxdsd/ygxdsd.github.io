@@ -1,9 +1,9 @@
 ---
-title : 异常处理器与Result
+title : SpringMVC 异常处理器
 category:
   - 异常
 tag:
-  - Spring
+  - SpringMVC
 ---
 
 
