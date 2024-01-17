@@ -104,6 +104,8 @@ List<Object> selectObjs(@Param(Constants.WRAPPER) Wrapper<T> queryWrapper);
 <E extends IPage<Map<String, Object>>> E selectMapsPage(E page, @Param(Constants.WRAPPER) Wrapper<T> queryWrapper);
 ```
 
+### IService
+
 
 
 ### 常用方法
