@@ -1,16 +1,16 @@
 ---
-title : POL技术入门
+title : POI技术入门
 category:
   - 项目技术
 tag:
-  - POL
+  - POI
 ---
 
 `more` 关于POL和EasyExcel的理论理解和基础入门使用
 <!-- more -->
 
 
-### POL是什么
+### POI是什么
 
 > 开发中经常会设计到excel的处理，如导出Excel，导入Excel到数据库中!操作Excel目前比较流行的就是`Apache POI`和阿里巴巴的`easyExcel` ! 本次博客介绍的就是Apache POI库、
 >
@@ -34,7 +34,7 @@ tag:
 **poi `操作xls的`
 poi-ooxml `操作xlsx的`**
 
-![image-20240117105124486](POI.assets/image-20240117105124486.png)
+![image-20240117105124486](../.vuepress/public/assets/images/mdImg/image-20240117105124486.png)
 
 
 
@@ -128,7 +128,7 @@ poi-ooxml `操作xlsx的`**
 
 **最后导出的效果图**
 
-![image-20240117144441095](POI.assets/image-20240117144441095.png)
+![image-20240117144441095](../.vuepress/public/assets/images/mdImg/image-20240117144441095.png)
 
 
 
@@ -267,11 +267,11 @@ void Read() throws Exception{
 
 **读取结果**
 
-![image-20240117154956628](POI.assets/image-20240117154956628.png)
+![image-20240117154956628](../.vuepress/public/assets/images/mdImg/image-20240117154956628.png)
 
 **表格内容**
 
-![image-20240117155014995](POI.assets/image-20240117155014995.png)
+![image-20240117155014995](../.vuepress/public/assets/images/mdImg/image-20240117155014995.png)
 
 
 
@@ -348,7 +348,7 @@ public class DemoData {
 
 **最终效果**
 
-![image-20240117162117387](POI.assets/image-20240117162117387.png)
+![image-20240117162117387](../.vuepress/public/assets/images/mdImg/image-20240117162117387.png)
 
 
 

@@ -1,0 +1,2 @@
+项目中，md文件图片替换
+../.vuepress/public/assets/images/mdImg/
