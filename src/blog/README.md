@@ -34,7 +34,7 @@ footer: 期待明天，怀恋昨天
 
 [POI技术入门](./POI.md)
 
-[POI进阶使用](./OSS.md)
+[POI进阶使用](./POIUpgrade.md)
 
 [阿里云Oss文件存储](./OSS.md)
 
