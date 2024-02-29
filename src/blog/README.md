@@ -24,9 +24,13 @@ footer: 期待明天，怀恋昨天
 
 [Mybatis-plus理解](./MyBatis-plus_comprehend.md)
 
+[Mybatis实现Iservice](./MyabtisIservice.md)
+
 [Lombok的使用](./Lombok.md)
 
 [QueryWrapper的使用](./QueryWrapper.md)
+
+[QueryWapper中or()和and()连用问题](./QueryWrapperAndOr.md)
 
 [POI技术入门](./POI.md)
 

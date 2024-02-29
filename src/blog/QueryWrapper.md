@@ -83,7 +83,26 @@ List<Device> devices = deviceMapper.selectList(device);
 
 这个示例，创建了对设备表的LambdaQueryWrapper语句，用id去进行in查找数据库中关注表中用户关注的设备进行匹配。返回
 
-- 
+- 动态条件构建
+
+LambdaQueryWrapper也支持动态条件构建，你可以根据实际情况添加或删除条件。例如，如果你有一个搜索页面，用户可以选择性地输入查询条件，你可以像这样动态构建查询条
+
+```java
+LambdaQueryWrapper<User> queryWrapper = Wrappers.<User>lambdaQuery();
+// StringUtils.isNotBlank使用了Java的Lang库中的方法，判断指定字符串是非空且至少包含一个非空白字符时，返回true
+if (StringUtils.isNotBlank(username)) {
+    queryWrapper.like(User::getUsername, username);
+}
+if (minAge != null) {
+    queryWrapper.ge(User::getAge, minAge);
+}
+if (maxAge != null) {
+    queryWrapper.le(User::getAge, maxAge);
+}
+
+List<User> userList = userDao.selectList(queryWrapper);
+
+```
 
 
 
@@ -101,3 +120,6 @@ lambdaQueryWrapper.eq(User::getAge, 25).like(User::getName, "John");
 List<User> userList = userMapper.selectList(lambdaQueryWrapper);
 ```
 
+当同时使用Or和and请参考以下博客↓
+
+[QueryWapper中or()和and()连用问题](./QueryWrapperAndOr.md)
