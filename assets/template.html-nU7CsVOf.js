@@ -1,1 +1,0 @@
-import{_ as t}from"./plugin-vue_export-helper-x3n3nnut.js";import{o,c as a,d as c,a as e,b as r}from"./app-PF0dnShz.js";const l={},n=e("p",null,[e("code",null,"more"),r(" 页面介绍")],-1);function s(m,_){return o(),a("div",null,[n,c(" more ")])}const p=t(l,[["render",s],["__file","template.html.vue"]]);export{p as default};
