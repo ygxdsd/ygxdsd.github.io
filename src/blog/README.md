@@ -35,15 +35,3 @@ footer: 期待明天，怀恋昨天
 [阿里云Oss文件存储](./OSS.md)
 
 [前后端文件传输](./FileUpload.md)
-
-[阿里云Oss文件存储](./OSS.md)
-
-[阿里云Oss文件存储](./OSS.md)
-
-[阿里云Oss文件存储](./OSS.md)
-
-[阿里云Oss文件存储](./OSS.md)
-
-[阿里云Oss文件存储](./OSS.md)
-
-[阿里云Oss文件存储](./OSS.md)

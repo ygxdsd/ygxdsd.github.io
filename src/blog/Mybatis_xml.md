@@ -1,5 +1,5 @@
 ---
-title : Mybatis xml
+title : Mybatis的xml编写
 category:
   - 框架
 tag:
@@ -8,7 +8,7 @@ tag:
 star : true
 ---
 
-`more` 关于Mybatis xml的使用
+`more` 关于Mybatis的xml文件编写
 <!-- more -->
 
 ## 使用前提

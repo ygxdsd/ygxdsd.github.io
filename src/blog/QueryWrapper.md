@@ -1,19 +1,29 @@
 ---
-title : QueryWrapper
+title : LambdaQueryWrapper和QueryWapper
 tag:
-  - Mybatis
+  - MyBatis
 ---
 
 ---
-`more` MybatisPlus中QueryWrapper常用方法
+`more` MybatisPlus中QueryWrapper和LambdaQueryWrapper和QueryWapper常用方法和区别
 
 <!-- more -->
 
 
 
-QueryWrapper 是 Mybatis-Plus 提供的一个强大的查询条件构造器，可以帮助你轻松构建灵活的查询条件，实现复杂的查询操作。
+**QueryWrapper**
+
+**QueryWrapper** 是 MyBatis-Plus 最基础的查询条件构造器之一。它通过链式调用的方式构建查询条件，并使用普通的字符串作为字段名、操作符和值。它的使用方式类似于传统的 SQL 查询。
 
 
+
+**LambdaQueryWrapper**
+
+**LambdaQueryWrapper** 是在 **QueryWrapper** 的基础上***\*增加了使用 Lambda 表达式的功能\****，使得构建查询条件更加类型安全、易读，并且能够在编译时进行语法检查。它通过方法引用的方式来指定实体类的属性，并提供了丰富的方法来构建查询条件。
+
+
+
+**常见的拼接方法查询**
 
 | 函数       |        说明         | 例子                                                         |
 | :--------- | :-----------------: | :----------------------------------------------------------- |
@@ -34,11 +44,60 @@ QueryWrapper 是 Mybatis-Plus 提供的一个强大的查询条件构造器，�
 
 
 
+### LambdaQueryWrapper和QueryWrapper的区别
+
+- `QueryWrapper`：使用字符串表示列名，通过字符串拼接的方式构建查询条件，这种方法编译器无法去验证列名的正确性，可能会存在不合法的列名风向
+
+- `LambdaQueryWrapper`：使用Lambda表达式表示列名，通过Lambda表达式的方式构建查询条件。这种方式更加类型安全，可以在编译时捕获拼写错误。
+
+
+
+### LambdaQueryWrapper的高级运用
+
+- 基本条件构建
+
+查询年龄大于30岁且名字包含"John"的用户
+
+```java
+LambdaQueryWrapper<User> queryWrapper = Wrappers.<User>lambdaQuery()
+        .ge(User::getAge, 30)
+        .like(User::getName, "John");
+
+List<User> userList = userDao.selectList(queryWrapper);
+
+```
+
+
+
+- 多表关联查询
+
+假设我们有一个名为`Device`的实体类，表示设备详情信息，其中包含了设备的`Id`字段，我们想要查询该用户关注设备的详细信息
+
+userId是要查找用户的id
+
+```java
+LambdaQueryWrapper<Device> device = Wrappers.<Device>lambdaQuery()
+                .inSql(Device::getId , "select device_id from focus_device where sys_user_id = " + userId);
+List<Device> devices = deviceMapper.selectList(device);
+```
+
+这个示例，创建了对设备表的LambdaQueryWrapper语句，用id去进行in查找数据库中关注表中用户关注的设备进行匹配。返回
+
+- 
+
+
+
 **实际运用**
 
 ```java
+// QueryWrapper的用法
 QueryWrapper<User> queryWrapper = new QueryWrapper<>();
 queryWrapper.eq("name", "Alice").or().like("address", "New%");
 List<User> userList = userService.list(queryWrapper);
+
+// LambdaQueryWrapper的用法
+LambdaQueryWrapper<User> lambdaQueryWrapper = new LambdaQueryWrapper<>();
+lambdaQueryWrapper.eq(User::getAge, 25).like(User::getName, "John");
+List<User> userList = userMapper.selectList(lambdaQueryWrapper);
 ```
 

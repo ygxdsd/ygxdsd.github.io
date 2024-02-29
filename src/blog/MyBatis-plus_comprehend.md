@@ -1,5 +1,5 @@
 ---
-title : MyBatis-plus的理解
+title : MyBatis-plus自带方法的运用
 category:
   - 框架
   - 作者理解
@@ -8,7 +8,7 @@ tag:
 ---
 
 
-`more` 关于Mybatis-plus的使用理解
+`more` 有关Mybatis-plus自带的方法运用
 <!-- more -->
 
 ## 关于MyBatis-plus理解
