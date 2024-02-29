@@ -1,1 +1,0 @@
-import{_ as t}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as n,c as r,d as c,b as o,a as e}from"./app-c1xsNO-R.js";const l={},s=e("p",null,[e("code",null,"more"),o(" 页面介绍")],-1),a=e("hr",null,null,-1);function _(i,m){return n(),r("div",null,[s,c(" more "),o(" Minio的安装和与SpringBoot项目结合使用 "),a])}const f=t(l,[["render",_],["__file","Minio.html.vue"]]);export{f as default};
