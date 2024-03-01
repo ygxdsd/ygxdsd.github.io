@@ -73,7 +73,7 @@ public interface IDeviceService extends IService<Device> {
 }
 ```
 
-> 定义了一个IDeviceService的接口，继承了IService<Device>接口。Device是对应的实体类
+> 定义了一个IDeviceService的接口，`继承了IService<Device>接口`。Device是对应的实体类
 
 
 
