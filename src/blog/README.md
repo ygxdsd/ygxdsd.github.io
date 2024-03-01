@@ -20,11 +20,11 @@ footer: 期待明天，怀恋昨天
 
 [SpringMVC 异常处理器](./ProjectExcptionAdvice.md)
 
-[Mybatis中xml配置](./Mybatis_xml.md)
+[Mybatis的自定义SQL语句编写](./Mybatis_xml.md)
 
-[Mybatis-plus理解](./MyBatis-plus_comprehend.md)
+[MyBatis-plus中Iservice和BaseMaper方法的运用](./MyBatis-plus_comprehend.md)
 
-[Mybatis实现Iservice](./MyabtisIservice.md)
+[Mybatis实现Iservice和BaseMaper](./MyabtisIservice.md)
 
 [Lombok的使用](./Lombok.md)
 
@@ -37,5 +37,7 @@ footer: 期待明天，怀恋昨天
 [POI进阶使用](./POIUpgrade.md)
 
 [阿里云Oss文件存储](./OSS.md)
+
+[Minio安装和使用](./Minio.md)
 
 [前后端文件传输](./FileUpload.md)

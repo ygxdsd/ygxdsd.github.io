@@ -7,10 +7,12 @@ category:
 
 ---
 
-`more` 使用Element组件或者Ajax请求进行文件传输
+`more` 使用Element组件或者Ajax请求想后端发送请求，将文件发送到后端，后端将文件再发送给前端，前端进行接收
 <!-- more -->
 
 ### 前端 -> 后端
+
+本次前端发送到后端，使用的是Ajax请求。可以将Ajax请求编写进方法当中，创建一个新的FormData对象。将文件放入FormData对象中，后端使用`MultipartFile`对象去进行接收。下面有对MultipartFile对象方法的API方法
 
 1：编写Ajax请求
 
@@ -46,6 +48,8 @@ category:
 > port：端口号是：后面跟着的数字，默认浏览器的端口是80
 >
 > same-origin就是限制不同源之间的资源访问
+
+
 
 **Same-Origin同源策略**
 
@@ -94,6 +98,8 @@ public R batchSave(MultipartFile file) throws IOException {
 
 
 ### 后端 -> 前端
+
+后端将文件发送给前端，需要注意：**发送的实际上是IO流，接收后，前端使用的是blob对象。**以下是对代码的实现
 
 1：在Controller层使用新参的自动装配获取到HttpServletResponse（响应体），并设置响应体的对应设置
 
