@@ -22,12 +22,15 @@ Lombok 是一个 Java 库，它通过简单的注解，可以让开发者在不�
 </dependency>
 ```
 
-### 实体类的优化使用
+### 使用Lombock优化实体类的编写
 
-> 当使用了该插件，在实体类中。可以使用`@Data`来简化实体类的书写
-> 
-> 自动生成默认的`toString()`、`equals()`、`hashCode()`和`getter/> 
-> setter`方法。
+#### 1、@Data
+
+添加`@Data`注解后，编译后的实体类自动增加如下信息：属性的`Set/Get`方法，变化后自动增减；默认构造器，其中`equals`方法、`hashCode`方法、`toString`方法由 Lombok 重写。
+
+#### 2、@AllArgsConstructor
+
+向实体类添加全参构造器,一般在开启这个注解后,需要手动开启无参构造器的注解`@NoArgsConstructor`(无参构造器)
 
 
 ### 开启日志
