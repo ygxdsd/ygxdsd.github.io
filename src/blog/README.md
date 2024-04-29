@@ -41,3 +41,9 @@ footer: 期待明天，怀恋昨天
 [Minio安装和使用](./Minio.md)
 
 [前后端文件传输](./FileUpload.md)
+
+[Jeecg简介](./JeecgIntro.md)
+
+[Jeecg基础使用](./JeecgBootBasicsUse.md)
+
+[Jeecg接口创建](./JeecgApi.md)
