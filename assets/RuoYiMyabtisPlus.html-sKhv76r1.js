@@ -1,0 +1,1 @@
+import{_ as o}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as t,c as s,d as a,a as e,b as c}from"./app-FqxNkaNW.js";const r={},l=e("p",null,[e("code",null,"more"),c(" 页面介绍")],-1);function n(_,m){return t(),s("div",null,[l,a(" more ")])}const d=o(r,[["render",n],["__file","RuoYiMyabtisPlus.html.vue"]]);export{d as default};
